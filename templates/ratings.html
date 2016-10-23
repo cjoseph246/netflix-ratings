@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+{% block header_text %}<br><br><h3></h3><br />{% endblock %}
+
+
+{% block body %}
+<div class='container'>
+<div class ="row" id='titles'>
+  <h5>
+  <div class="col-md-2"><em>Available</div> 
+  <div class="col-md-6">Title</div>
+  <div class="col-md-2">Critic Rating</div>
+  <div class="col-md-2">Audience Rating</div>
+  <div class = "row" id ="line">
+  <div class="col-md-12"></div></div>
+  </h5>
+</div>
+
+<h4>
+<div class="row" id="grouped_by">
+{% for date in shows|groupby('date') %}
+</div>
+    <div class="row" id="groups">
+    {% for show in date.list %}
+      <div class="col-md-2">{{ date.grouper if loop.index == 1 }}</div>
+      <div class="col-md-6"><em>{{ show.show}}</div> 
+      <div class="col-md-2"><em>{{ show.tomatometer if show.tomatometer != None else '-' }}</div> 
+      <div class="col-md-2"><em>{{ show.audience_rating if show.audience_rating != None else '-' }}</div>
+      <br>
+    {% endfor %}
+    <br><br>
+  {% endfor %}
+<br><br>
+</h4>
+</div>
+</div> 
+{% endblock %}

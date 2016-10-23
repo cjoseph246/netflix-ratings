@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block header_text %}
+{{ super() }}
+   <style type="text/css">
+    .jumbotron { background: #FFC20F;}
+  </style>
+About{% endblock %}
+
+
+{% block body %}
+<div class="container" id="about">
+<h3>
+<p><em>The purpose of this website is to display new listings on Netflix and any associated Rotten Tomato ratings. <br><br>
+  The website is the result of scraped data from various websites.  It is written using Python (Flask, Beautiful Soup, httplib2), Jinja2 templating, HTML/CSS/jQuery, and SQLAlchemy. <br><br>
+</p>
+</h3>
+<br><br><br><br><br><br>
+<br><br><br><br /><br><br><br><br></div>
+{% endblock %}
+
