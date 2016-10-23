@@ -1,0 +1,50 @@
+.jumbotron { background-image: url("hoc.png");
+	min-width: 10%;
+	min-height: 10%;
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.jumbotron { background-color: #FFC20F;
+    color: #B9090B;
+    font-family: Garamond, Baskerville, “Baskerville Old Face”, “Hoefler Text”, “Times New Roman”, serif;
+    letter-spacing: 5px;
+    /*text-align: center;*/
+ }
+
+body { background-color: #B9090B;
+    color: #FFC20F;
+    font-family: Garamond, Baskerville, “Baskerville Old Face”, “Hoefler Text”, “Times New Roman”, serif;
+}
+
+#titles { color: #B9090B; 
+	padding: 2px 30px 25px 30px;
+	text-align: top;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+
+#line { background-color: white;
+}
+
+body {
+    border-style: solid;
+    border-width: 0px 10px 10px 10px;  /*top right bottom left */
+}
+
+
+.footer {
+  position: fixed;
+  height: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  color: #B9090B;
+}
+
+
